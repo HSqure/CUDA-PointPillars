@@ -18,7 +18,7 @@ Reinstall `pcdet v0.5` even if you have already installed previous version.
 ```shell
 $ cd ../OpenPCDet
 $ python setup.py develop
-$ pip install pyyaml scikit-image onnx onnx-simplifier
+$ pip install pyyaml scikit-image onnx==1.11.0 onnxsim
 $ pip install onnx_graphsurgeon --index-url https://pypi.ngc.nvidia.com
 $ python exporter.py --ckpt ./pointpillar_7728.pth
 $ mv pointpillar.onnx ../model/ && mv params.h ../include/
